@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogyakarta Wisata & Rental Mobil - Petualangan Impian Anda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/featured/?yogyakarta,indonesia') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .btn-custom {
+            background-color: #ff6b35;
+            border: none;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #e55a2b;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .whatsapp-float a {
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .whatsapp-float a:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-map-marked-alt"></i> Yogyakarta Explorer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#wisata">Wisata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rental">Rental Mobil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Selamat Datang di Yogyakarta</h1>
+            <p>Jelajahi keindahan budaya, sejarah, dan petualangan. Sewa mobil impian Anda dan buat perjalanan tak terlupakan!</p>
+            <a href="#wisata" class="btn btn-custom btn-lg">Mulai Petualangan</a>
+        </div>
+    </section>
+
+    <!-- Wisata Section -->
+    <section id="wisata" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Tempat Wisata Terpopuler di Yogyakarta</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/?borobudur" class="card-img-top" alt="Borobudur">
+                        <div class="card-body">
+                            <h5 class="card-title">Borobudur</h5>
+                            <p class="card-text">Kuil Buddha terbesar di dunia. Rasakan keajaiban arsitektur kuno yang memukau hati.</p>
+                            <a href="#" class="btn btn-custom">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/?malioboro,yogyakarta" class="card-img-top" alt="Malioboro">
+                        <div class="card-body">
+                            <h5 class="card-title">Malioboro</h5>
+                            <p class="card-text">Surga belanja dan kuliner. Nikmati suasana malam yang hidup dengan pedagang kaki lima.</p>
+                            <a href="#" class="btn btn-custom">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/?prambanan" class="card-img-top" alt="Prambanan">
+                        <div class="card-body">
+                            <h5 class="card-title">Prambanan</h5>
+                            <p class="card-text">Kuil Hindu megah dengan relief epik. Saksikan pertunjukan Ramayana di malam hari.</p>
+                            <a href="#" class="btn btn-custom">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Mobil Section -->
+    <section id="rental" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Rental Mobil Terpercaya</h2>
+            <p class="text-center mb-4">Pilih mobil impian Anda untuk menjelajahi Yogyakarta dengan nyaman dan aman. Harga mulai dari Rp 300.000/hari.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/?car,rental" class="card-img-top" alt="Mobil Sedan">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobil Sedan</h5>
+                            <p class="card-text">Nyaman untuk keluarga. Kapasitas 5 orang, AC, dan bahan bakar efisien.</p>
+                            <p class="text-muted">Rp 350.000/hari</p>
+                            <a href="#" class="btn btn-custom">Sewa Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/?suv,car" class="card-img-top" alt="Mobil SUV">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobil SUV</h5>
+                            <p class="card-text">Ideal untuk petualangan off-road. Kapasitas 7 orang, cocok untuk wisata gunung.</p>
+                            <p class="text-muted">Rp 500.000/hari</p>
+                            <a href="#" class="btn btn-custom">Sewa Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/featured/?motorcycle,rental" class="card-img-top" alt="Motor">
+                        <div class="card-body">
+                            <h5 class="card-title">Motor</h5>
+                            <p class="card-text">Fleksibel untuk eksplorasi kota. Hemat bahan bakar dan mudah parkir.</p>
+                            <p class="text-muted">Rp 100.000/hari</p>
+                            <a href="#" class="btn btn-custom">Sewa Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="container text-center">
+            <h5>Hubungi Kami</h5>
+            <p><i class="fas fa-phone"></i> +62 899-381-2800 | <i class="fas fa-envelope"></i> info@yogyakartaexplorer.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Malioboro No. 123, Yogyakarta</p>
+            <a href="https://wa.me/628993812800?text=Halo%2C%20saya%20tertarik%20dengan%20wisata%20dan%20rental%20mobil%20di%20Yogyakarta.%20Bisa%20beri%20info%20lebih%20lanjut%3F" class="btn btn-success btn-lg mt-3" target="_blank">
+                <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+            </a>
+            <p>&copy; 2023 Yogyakarta Explorer. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/628993812800?text=Halo%2C%20saya%20tertarik%20dengan%20wisata%20dan%20rental%20mobil%20di%20Yogyakarta.%20Bisa%20beri%20info%20lebih%20lanjut%3F" target="_blank" title="Hubungi via WhatsApp">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
